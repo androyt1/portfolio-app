@@ -25,7 +25,7 @@ interface IconComponentProp {
 
 const Icon: React.FC<IconComponentProp> = ({ IconComponent }) => (
     <motion.div variants={iconVariants} initial='initial' animate='initial' whileHover='hover'>
-        <IconComponent size={30} color='#fde68a' />
+        <IconComponent size={30} color='#999997' />
     </motion.div>
 );
 

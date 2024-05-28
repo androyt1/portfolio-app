@@ -51,7 +51,7 @@ const Header = () => {
                                 className={`${
                                     active === link.label
                                         ? "text-[18px] text-zinc-100"
-                                        : "text-base text-[#fde68a]"
+                                        : "text-base text-[#999997]"
                                 }`}>
                                 {link.label}
                             </a>

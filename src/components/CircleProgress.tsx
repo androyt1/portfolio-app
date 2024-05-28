@@ -9,7 +9,7 @@ const CircleProgress = () => {
     const strokeDashoffset = useTransform(scrollYProgress, [0, 1], [circumference, 0]);
 
     return (
-        <div className='z-[100]'>
+        <div className='z-[100] hidden sm:flex'>
             <svg className='w-10 h-10 animate-pulse' viewBox='0 0 120 120'>
                 <circle
                     cx='60'

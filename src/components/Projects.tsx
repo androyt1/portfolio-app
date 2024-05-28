@@ -8,7 +8,7 @@ const Projects = () => {
             <div
                 className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full text-zinc-100'
                 data-aos='fade-up'>
-                <h1 className='text-3xl font-bold text-center mb-6'>Projects</h1>
+                <h1 className='text-3xl font-semibold text-center mb-6 font-dmserif'>Projects</h1>
                 {projects.map((project, index) => (
                     <div key={index} className='mb-8'>
                         <h2 className='text-2xl font-semibold'>{project.name}</h2>

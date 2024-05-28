@@ -12,13 +12,13 @@ import { useEffect } from "react";
 export default function App() {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // animation duration
-            once: true, // whether animation should happen only once - while scrolling down
+            duration: 1000,
+            once: true,
         });
     }, []);
 
     return (
-        <div className='max-w-6xl mx-auto bg-gradient-to-r from-stone-700 to-stone-950'>
+        <div className='max-w-6xl mx-auto bg-gradient-to-r from-stone-700 to-stone-950 font-lato '>
             <Layout>
                 <Hero />
                 <About />

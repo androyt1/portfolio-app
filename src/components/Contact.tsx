@@ -6,7 +6,9 @@ const Contact = () => {
             <div
                 className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full text-zinc-100'
                 data-aos='fade-up'>
-                <h1 className='text-3xl font-bold text-center mb-6'>📞 Contact Me</h1>
+                <h1 className='text-3xl font-semibold text-center mb-6 font-dmserif'>
+                    📞 Contact Me
+                </h1>
                 <div className='space-y-4 text-center'>
                     <div>
                         <h2 className='text-xl font-bold'>👤 Name</h2>

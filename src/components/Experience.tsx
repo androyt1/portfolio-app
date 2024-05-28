@@ -3,10 +3,10 @@ import { experiences } from "../constants";
 const Experience = () => {
     return (
         <div
-            className='min-h-screen bg-stone-700 p-4 flex items-center justify-center pt-[100px] text-zinc-100'
+            className='min-h-screen bg-stone-700 p-4 flex items-center justify-center pt-[100px] text-zinc-100 '
             id='experience'>
             <div className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full' data-aos='fade-up'>
-                <h1 className='text-3xl font-bold text-center mb-6'>Experience</h1>
+                <h1 className='text-3xl font-semibold text-center mb-6 font-dmserif'>Experience</h1>
                 {experiences.map((experience, index) => (
                     <div key={index} className='mb-8'>
                         <h2 className='text-2xl font-semibold'>{experience.role}</h2>

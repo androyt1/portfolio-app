@@ -8,7 +8,7 @@ const About = () => {
                 <h1 className='text-3xl font-semibold text-center mb-4 font-dmserif'>About Me</h1>
                 <div className='text-center mb-6'>
                     <img
-                        src='/images/me.png'
+                        src='/images/androy.png'
                         alt='Profile'
                         className='w-32 h-32 object-cover rounded-full mx-auto mb-4'
                     />

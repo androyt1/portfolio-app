@@ -30,7 +30,7 @@ const Icon: React.FC<IconComponentProp> = ({ IconComponent }) => (
 );
 
 const SocialIcons: React.FC = () => (
-    <div className=' flex flex-col sm:flex-row items-end sm:items-center justify-between w-full md:p-6 gap-2 sm:gap-0'>
+    <div className=' flex flex-col sm:flex-row items-end sm:items-center justify-between w-full md:p-6 gap-4 sm:gap-0'>
         <CircleProgress />
         <Icon IconComponent={TfiLinkedin} />
         <Icon IconComponent={TfiGithub} />

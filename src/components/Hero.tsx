@@ -7,7 +7,7 @@ const Hero = () => {
                 className=' flex flex-col justify-center items-start px-3 sm:px-0'
                 data-aos='fade-up'>
                 <div className='w-full flex flex-row sm:hidden relative justify-between items-center pt-20 mb-4'>
-                    <img src='/images/androy.png' className='w-48 h-auto rounded-full ' alt='' />
+                    <img src='/images/me.png' className='w-60 h-auto rounded-md ' alt='' />
                     <SocialIcons />
                 </div>
                 <h1 className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest font-dmserif'>

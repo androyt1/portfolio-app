@@ -6,7 +6,7 @@ const Hero = () => {
             <div
                 className=' flex flex-col justify-center items-start px-3 sm:px-0'
                 data-aos='fade-up'>
-                <div className='w-full flex flex-row sm:hidden relative justify-between items-center pt-24 mb-4'>
+                <div className='w-full flex flex-row sm:hidden relative justify-between items-center pt-20 mb-4'>
                     <img src='/images/androy.png' className='w-48 h-auto rounded-full ' alt='' />
                     <SocialIcons />
                 </div>

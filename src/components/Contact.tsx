@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
         <div
-            className='min-h-screen bg-[#38BDF8] p-4 flex items-center justify-center pt-[100px]'
+            className='min-h-screen bg-stone-700 p-4 flex items-center justify-center pt-[100px]'
             id='contact'>
             <div
                 className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full text-zinc-100'

@@ -13,11 +13,11 @@ const Hero = () => {
                 <h1 className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wide'>
                     Building Digital <br /> <span className='text-sky-400'>Experiences</span>
                 </h1>
-                <h2 className='mt-4 sm:mt-6 text-2xl md:text-4xl text-[#d9d9d8]'>
+                <h2 className='mt-4 sm:mt-6  text-2xl md:text-4xl text-[#fcfcfb] '>
                     Crafting Seamless and Intuitive
                     <br /> Web Solutions
                 </h2>
-                <p className='mt-2 sm:mt-6 text-lg max-w-2xl  text-[#a5a5a5]'>
+                <p className='mt-2 sm:mt-6  text-lg max-w-2xl  text-[#d3d3d3]'>
                     I am Andrew Aghoghovwia, a seasoned Fullstack Developer passionate about
                     transforming ideas into interactive, high-performance web applications. With 7
                     years of experience crafting responsive and dynamic user interfaces, I thrive in

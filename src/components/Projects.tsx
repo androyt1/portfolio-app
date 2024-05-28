@@ -3,7 +3,7 @@ import { projects } from "../constants";
 const Projects = () => {
     return (
         <div
-            className='min-h-screen bg-[#38BBF6]  p-4 flex items-center justify-center pt-[100px]'
+            className='min-h-screen bg-stone-700  p-4 flex items-center justify-center pt-[100px]'
             id='projects'>
             <div
                 className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full text-zinc-100'

@@ -2,7 +2,7 @@ import { skills } from "../constants";
 const About = () => {
     return (
         <div
-            className='min-h-screen bg-[#38BDF8] p-4 flex items-center justify-center pt-[100px] text-slate-100'
+            className='min-h-screen bg-stone-700 p-4 flex items-center justify-center pt-[100px] text-slate-100'
             id='about'>
             <div className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full' data-aos='fade-up'>
                 <h1 className='text-3xl font-bold text-center mb-4'>About Me</h1>
@@ -48,7 +48,7 @@ const About = () => {
                         {skills.map((skill, index) => (
                             <li key={index} className='flex items-center'>
                                 <svg
-                                    className='w-6 h-6 text-[#38BDF8] mr-2'
+                                    className='w-6 h-6 text-stone-300 mr-2'
                                     fill='none'
                                     stroke='currentColor'
                                     strokeWidth='2'

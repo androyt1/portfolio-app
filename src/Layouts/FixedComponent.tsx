@@ -4,7 +4,7 @@ import { FaDownload, FaEnvelope } from "react-icons/fa";
 const FixedComponent = () => {
     return (
         <div className='hidden sm:flex relative sm:w-[250px] md:w-[360px] mr-16'>
-            <div className=' fixed top-[80px] h-screen sm:w-[250px] md:w-[360px] flex-col justify-center items-start   overflow-hidden rounded-bl-xl   bg-zinc-900'>
+            <div className=' fixed top-[80px] h-screen sm:w-[250px] md:w-[360px] flex-col justify-center items-start   overflow-hidden rounded-bl-xl   '>
                 <div className='flex   w-full h-1/2 overflow-hidden  px-3 relative flex-col justify-center items-start'>
                     <img
                         src='/images/androy.png'

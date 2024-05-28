@@ -104,3 +104,37 @@ export const projects = [
         link: "https://github.com/yourusername/portfolio",
     },
 ];
+
+type LinkProps = {
+    id: number;
+    label: string;
+    href: string;
+};
+
+export const navlinks: LinkProps[] = [
+    {
+        id: 0,
+        label: "Home",
+        href: "#hero",
+    },
+    {
+        id: 1,
+        label: "About",
+        href: "#about",
+    },
+    {
+        id: 2,
+        label: "Experience",
+        href: "#experience",
+    },
+    {
+        id: 3,
+        label: "Projects",
+        href: "#projects",
+    },
+    {
+        id: 4,
+        label: "Contact",
+        href: "#contact",
+    },
+];

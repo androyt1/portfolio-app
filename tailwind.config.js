@@ -4,8 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                dmserif: ["DM Serif Display", "serif"],
-                lato: ["Lato", "sans-serif"],
+                inter: ["Inter", "sans-serif"],
             },
         },
     },

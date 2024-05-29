@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <header className='h-20 w-full  sticky top-0 flex justify-between items-center px-3 -mt-20 z-[100] backdrop-blur-md '>
             <nav className='flex justify-between items-center w-full relative'>
-                <div className='text-2xl font-noraml text-stone-100 font-dmserif'>
+                <div className='text-2xl font-noraml text-stone-100 font-inter'>
                     Andrew <span className=''>Aghoghovwia</span>
                 </div>
                 <ul className='hidden sm:flex space-x-4 '>
@@ -27,7 +27,7 @@ const Header = () => {
                                 onClick={() => setActive(link.label)}
                                 className={`${
                                     active === link.label
-                                        ? "text-[18px] text-zinc-100"
+                                        ? "text-[18px] text-zinc-100 underline"
                                         : "text-base text-[#999997]"
                                 }`}>
                                 {link.label}

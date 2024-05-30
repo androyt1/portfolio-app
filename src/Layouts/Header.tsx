@@ -52,13 +52,16 @@ const Header = () => {
                         />
                     )}
                 </div>
-                <button
-                    className={`w-full h-screen fixed bg-stone-950/70 backdrop-blur-md top-20 left-0 transition duration-500 end-auto flex justify-start items-center  ${
+                <div
+                    className={`w-full h-screen fixed bg-stone-950/70 backdrop-blur-md top-20 left-0 transition duration-500 end-auto flex justify-start items-center ${
                         isOpen ? "translate-x-0" : "-translate-x-[100%]"
                     }`}
                     onClick={() => setIsOpen(false)}>
-                    <div className='w-[40%] h-full bg-stone-950/80 flex justify-center items-center '>
-                        <ul className='flex flex-col justify-center items-center gap-10 w-full px-3 '>
+                    <div
+                        className='w-[40%] h-full bg-stone-950/80 flex justify-center items-center'
+                        onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the sidebar
+                    >
+                        <ul className='flex flex-col justify-center items-center gap-10 w-full px-3'>
                             {navlinks.map((link) => (
                                 <li key={link.id}>
                                     <a
@@ -73,17 +76,21 @@ const Header = () => {
                                     </a>
                                 </li>
                             ))}
-                            <button className='flex items-center justify-center py-2 font-semibold rounded-md w-full border border-white/50 text-white md:mt-6 hover:bg-white hover:text-zinc-800 active:bg-gray-200 active:text-zinc-800'>
-                                <FaDownload className='h-5 w-5 mr-2' />
-                                Download CV
-                            </button>
-                            <button className='flex items-center justify-center py-2 font-semibold rounded-md w-full bg-[#38BDF8] text-zinc-800 hover:bg-[#2CA7D8] hover:text-white active:bg-[#1C8DB0] active:text-white'>
-                                <FaEnvelope className='h-5 w-5 mr-2' />
-                                Contact Me
-                            </button>
+                            <li>
+                                <button className='flex items-center justify-center py-2 font-semibold rounded-md w-full border border-white/50 text-white md:mt-6 hover:bg-white hover:text-zinc-800 active:bg-gray-200 active:text-zinc-800 px-3 '>
+                                    <FaDownload className='h-5 w-5 mr-2' />
+                                    Download CV
+                                </button>
+                            </li>
+                            <li>
+                                <button className='flex items-center justify-center py-2 font-semibold rounded-md w-full bg-[#38BDF8] text-zinc-800 hover:bg-[#2CA7D8] hover:text-white active:bg-[#1C8DB0] active:text-white px-3 '>
+                                    <FaEnvelope className='h-5 w-5 mr-2' />
+                                    Contact Me
+                                </button>
+                            </li>
                         </ul>
                     </div>
-                </button>
+                </div>
             </nav>
         </header>
     );

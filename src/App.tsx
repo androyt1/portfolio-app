@@ -18,7 +18,7 @@ export default function App() {
     }, []);
 
     return (
-        <div className='max-w-6xl mx-auto bg-gradient-to-r from-stone-700 to-stone-950 font-inter '>
+        <div className='max-w-7xl mx-auto bg-gradient-to-r from-stone-700 to-stone-950 font-inter '>
             <Layout>
                 <Hero />
                 <About />

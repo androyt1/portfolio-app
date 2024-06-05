@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { navlinks } from "../constants";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const Header = () => {
     const [active, setActive] = useState<string>("Home");
@@ -14,9 +15,9 @@ const Header = () => {
     };
 
     return (
-        <header className='h-20 w-full  sticky top-0 flex justify-between items-center px-3 md:px-5 -mt-20 z-[100] backdrop-blur-md '>
+        <header className='h-20 w-full  sticky top-0 flex justify-between items-center px-3 md:px-5 -mt-20 z-[100] backdrop-blur-md bg-white dark:bg-transparent '>
             <nav className='flex justify-between items-center w-full relative'>
-                <div className='text-2xl font-noraml text-stone-100 font-inter'>
+                <div className='text-2xl font-noraml text-stone-800 dark:text-stone-100 font-inter'>
                     Andrew <span className=''>Aghoghovwia</span>
                 </div>
                 <ul className='hidden sm:flex space-x-4 '>
@@ -27,31 +28,33 @@ const Header = () => {
                                 onClick={() => setActive(link.label)}
                                 className={`${
                                     active === link.label
-                                        ? "text-[18px] text-zinc-100 underline"
-                                        : "text-base text-[#999997]"
+                                        ? "text-[18px] dark:text-zinc-100 underline"
+                                        : "text-base dark:text-[#999997]"
                                 }`}>
                                 {link.label}
                             </a>
                         </li>
                     ))}
                 </ul>
+                <div className='flex items-center'>
+                    <ThemeSwitcher />
+                </div>
                 <div className='flex sm:hidden'>
                     {isOpen ? (
                         <RiCloseLargeLine
                             size={30}
-                            color='#fff'
-                            className='cursor-pointer'
+                            className='cursor-pointer dark:text-stone-100 text-stone-800'
                             onClick={toggle}
                         />
                     ) : (
                         <FiMenu
                             size={30}
-                            color='#fff'
-                            className='cursor-pointer'
+                            className='cursor-pointer dark:text-stone-100 text-stone-800'
                             onClick={toggle}
                         />
                     )}
                 </div>
+
                 <div
                     className={`w-full h-screen fixed bg-stone-950/70 backdrop-blur-md top-20 left-0 transition duration-500 end-auto flex justify-start items-center ${
                         isOpen ? "translate-x-0" : "-translate-x-[100%]"

@@ -11,8 +11,7 @@ export const Layout = ({ children }: LayoutProp) => {
             <Header />
             <div className='w-full flex items-center justify-between  md:px-5 '>
                 <FixedComponent />
-
-                <div className='  bg-zinc-9o0 flex-1 text-white'>{children}</div>
+                <div className='  bg-zinc-9o0 flex-1 text-white '>{children}</div>
             </div>
         </>
     );

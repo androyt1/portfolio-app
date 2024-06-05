@@ -2,9 +2,11 @@ import { skills } from "../constants";
 const About = () => {
     return (
         <div
-            className='min-h-screen bg-stone-700 p-4 flex items-center justify-center pt-[100px] text-slate-100'
+            className='min-h-screen bg-stone-300 dark:bg-stone-700 p-4 flex items-center justify-center pt-[100px] text-stone-800 dark:text-slate-100'
             id='about'>
-            <div className='bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full' data-aos='fade-up'>
+            <div
+                className='bg-white dark:bg-black shadow-lg rounded-lg p-6 max-w-4xl w-full'
+                data-aos='fade-up'>
                 <h1 className='text-3xl font-semibold text-center mb-4 font-inter'>About Me</h1>
                 <div className='text-center mb-6'>
                     <img
@@ -13,7 +15,7 @@ const About = () => {
                         className='w-32 h-32 object-cover rounded-full mx-auto mb-4'
                     />
                     <h2 className='text-xl font-semibold'>Andrew Aghoghovwia</h2>
-                    <p className='text-sky-300'>Seasoned Fullstack Developer</p>
+                    <p className='text-sky-600 dark:text-sky-300'>Seasoned Fullstack Developer</p>
                 </div>
                 <div>
                     <h3 className='text-2xl font-bold mb-2'>Contact Information</h3>
@@ -22,7 +24,9 @@ const About = () => {
                     </p>
                     <p>
                         <strong>Email:</strong>{" "}
-                        <a href='mailto:androyt1@gmail.com' className='text-sky-300'>
+                        <a
+                            href='mailto:androyt1@gmail.com'
+                            className='text-sky-600 dark:text-sky-300'>
                             androyt1@gmail.com
                         </a>
                     </p>
